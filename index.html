@@ -1,14 +1,19 @@
----
-layout: layout
-title: "Posts"
----
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zach McCoy</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body style="margin: 0px">
 
-<section class="content">
-  <ul class="listing">
-    {% for post in site.posts %}
-    <li>
-      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-</section>
+<div>
+    <canvas style="display: block" id="canvas" width="255" height="255"/>
+</div>
+
+<script type="text/javascript" src="game.js"></script>
+<script>
+    example.ScalaJSExample().main(document.getElementById('canvas'));
+</script>
+</body>
+</html>
+
